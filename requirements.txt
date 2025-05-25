@@ -1,0 +1,8 @@
+pandas 
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+# for automatically etup.py file
+-e .
