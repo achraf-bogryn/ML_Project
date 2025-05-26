@@ -1,0 +1,1 @@
+# data ingestion is apart f model by reading data from source like database or API
