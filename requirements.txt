@@ -3,6 +3,7 @@ numpy
 scikit-learn
 matplotlib
 seaborn
-
+catboost
+xgboost
 # for automatically etup.py file
--e .
+-e . 
