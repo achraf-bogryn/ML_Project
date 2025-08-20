@@ -5,5 +5,5 @@ matplotlib
 seaborn
 catboost
 xgboost
-# for automatically etup.py file
+# for automatically setup.py file
 -e . 
