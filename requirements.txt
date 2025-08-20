@@ -5,5 +5,7 @@ matplotlib
 seaborn
 catboost
 xgboost
+# help with pkl files
+dill
 # for automatically setup.py file
--e . 
+# -e . 
