@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from catboost import CatBoostRegressor
 from sklearn.ensemble import (AdaBoostRegressor, GradientBoostingRegressor,
                               RandomForestRegressor)
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression ,Ridge, Lasso, ElasticNet
 from sklearn.metrics import r2_score
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
@@ -34,6 +34,9 @@ class ModelTrainer:
                 "Decision Tree": DecisionTreeRegressor(),
                 "Gradient Boosting": GradientBoostingRegressor(),
                 "Linear Regression": LinearRegression(),
+                "Ridge": Ridge(),
+                "Lasso": Lasso(),
+                "ElasticNet": ElasticNet(),
                 "K-Neighbours Regressor": KNeighborsRegressor(),
                 "XGB Regressor": XGBRegressor(),
                 "CatBoosting Regressor": CatBoostRegressor(verbose=False),
@@ -52,7 +55,23 @@ class ModelTrainer:
                     'subsample':[0.6,0.7,0.75,0.8,0.85,0.9],
                     'n_estimators': [8,16,32,64,128,256]
                 },
-                "Linear Regression": {},
+                "Linear Regression": {
+        'fit_intercept': [True, False],
+        'positive': [True, False]
+    },
+    "Ridge": {
+        'alpha': [0.01, 0.1, 1, 10, 100],
+        'fit_intercept': [True, False]
+    },
+    "Lasso": {
+        'alpha': [0.001, 0.01, 0.1, 1, 10],
+        'fit_intercept': [True, False]
+    },
+    "ElasticNet": {
+        'alpha': [0.001, 0.01, 0.1, 1, 10],
+        'l1_ratio': [0.1, 0.3, 0.5, 0.7, 0.9],
+        'fit_intercept': [True, False]
+    },
                 "K-Neighbours Regressor": {
                     'n_neighbors': [3,5,7,9,11],
                     'weights': ['uniform', 'distance'],
