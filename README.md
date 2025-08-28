@@ -95,5 +95,23 @@ The web application has **two main pages**:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/math-score-prediction.git
-   cd math-score-prediction
+   
+   git clone https://github.com/achraf-bogryn/ML_Project.git
+   cd ML_Project
+   ```
+ 2. Install dependencies:
+    
+    ```bash
+    pip install -r requirements.txt
+    ```
+ 3. Run the Flask app:
+ 
+    ```bash
+    python app.py
+     ```
+ 4. Open in your browser:
+
+     ```bash
+     http://127.0.0.1:5000
+
+     ```
