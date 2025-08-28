@@ -20,7 +20,9 @@ Our regression-based model leverages socio-demographic and academic features to 
 
 ## 🔬 Model Approach
 
-- Uses **regression techniques** to model relationships between student characteristics and math performance.  
+- Conducted **experiments on multiple regression models** including:  
+  Random Forest, Decision Tree, Gradient Boosting, Linear Regression, Ridge, Lasso, ElasticNet, K-Nearest Neighbors, XGBoost, CatBoost, and AdaBoost.  
+- Selected the model with the **highest R² score** after **hyperparameter tuning**, achieving an accuracy of **~89% (R² = 0.89)**.  
 - Considers **demographics, parental education, lunch program status, test preparation**, and other academic indicators.  
 - Provides accurate predictions and interpretable insights into factors influencing mathematics achievement.  
 
