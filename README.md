@@ -7,7 +7,7 @@ This project predicts **student mathematics performance** using socio-demographi
 
 ## 🎯 Problem Statement
 
-![Problem Statement](assets/problem_statement.png)  
+![Problem Statement](images/student.webp)  
 
 Educational institutions often struggle to identify students **at risk of poor mathematics performance**.  
 Our regression-based model leverages socio-demographic and academic features to predict math scores, enabling educators to:
@@ -50,10 +50,10 @@ The dataset contains student demographic and academic details. Key features:
 The web application has **two main pages**:
 
 1. **`index.html`** – Displays the project name and problem statement.  
-   ![Index Page](assets/index_page.png)  
+   ![Index Page](images/index.PNG)  
 
 2. **`predict.html`** – A form where users enter student details to predict the math score.  
-   ![Prediction Page](assets/predict_page.png)  
+   ![Prediction Page](images/home.PNG)  
 
 ---
 
