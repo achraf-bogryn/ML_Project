@@ -20,9 +20,7 @@ Our regression-based model leverages socio-demographic and academic features to 
 
 ## 🔬 Model Approach
 
-- Conducted **experiments on multiple regression models** including:  
-  Random Forest, Decision Tree, Gradient Boosting, Linear Regression, Ridge, Lasso, ElasticNet, K-Nearest Neighbors, XGBoost, CatBoost, and AdaBoost.  
-- Selected the model with the **highest R² score** after **hyperparameter tuning**, achieving an accuracy of **~89% (R² = 0.89)**.  
+- Uses **regression techniques** to model relationships between student characteristics and math performance.  
 - Considers **demographics, parental education, lunch program status, test preparation**, and other academic indicators.  
 - Provides accurate predictions and interpretable insights into factors influencing mathematics achievement.  
 
@@ -44,6 +42,30 @@ The dataset contains student demographic and academic details. Key features:
 - `32+` samples (extendable dataset)  
 - Score range: `0–100`  
 - `5` ethnic groups  
+
+---
+
+## 🧪 Machine Learning Experiments
+
+To ensure the best predictive performance, we **experimented with multiple regression models**, including:
+
+- Random Forest Regressor  
+- Decision Tree Regressor  
+- Gradient Boosting Regressor  
+- Linear Regression, Ridge, Lasso, ElasticNet  
+- K-Nearest Neighbors Regressor  
+- XGBoost Regressor  
+- CatBoost Regressor  
+- AdaBoost Regressor  
+
+We compared models using the **R² Score** as the evaluation metric.  
+After initial testing, we applied **hyperparameter tuning** (via `RandomizedSearchCV` and `GridSearchCV`) to optimize performance.  
+
+**Key Results**:  
+- Baseline models achieved R² scores between **65%–82%**.  
+- After hyperparameter optimization, the **best model** achieved an **R² score of 0.89 (89%)**, significantly improving predictive accuracy.  
+
+This demonstrates the **effectiveness of ensemble methods** (e.g., Random Forest, Gradient Boosting, XGBoost) in handling heterogeneous educational data.  
 
 ---
 
